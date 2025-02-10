@@ -20,11 +20,11 @@ The completed app should meet the following criteria:
 
 The following images show the appearance and functionality of the web application:
 
-![The film tracker Home page displays an input field with a search button that allows the user to search for a film and see the information for that film if it is returned](./Assets/13-01-film_tracker_homepage.png)
+![The film tracker Home page displays an input field with a search button that allows the user to search for a film and see the information for that film if it is returned](./images/13-01-film_tracker_homepage.png)
 
-![The film-tracker Watch List page displays rows of films the user has saved to their watch list in localStorage, with the option to remove a film from the list.](./Assets/13-02-film_tracker_watchlist.png)
+![The film-tracker Watch List page displays rows of films the user has saved to their watch list in localStorage, with the option to remove a film from the list.](./images/13-02-film_tracker_watchlist.png)
 
-![The film-tracker "Seen It" list page displays rows of films the user has already seen stored in localStorage, with the option to remove a film from the list.](./Assets/13-03-film_tracker_seenit.png)
+![The film-tracker "Seen It" list page displays rows of films the user has already seen stored in localStorage, with the option to remove a film from the list.](./images/13-03-film_tracker_seenit.png)
 
 ## Getting Started
 
