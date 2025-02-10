@@ -1,6 +1,6 @@
 import type React from 'react';
 // TODO: Uncomment when Film interface is added
-import type Film from '../interfaces/Film.interface';
+import type Film from '../utils/interfaces/Film.interface';
 import { IoEyeOutline } from 'react-icons/io5';
 import { ImCross } from 'react-icons/im';
 import { CgPlayListAdd } from 'react-icons/cg';

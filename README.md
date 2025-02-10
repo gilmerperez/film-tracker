@@ -1,20 +1,50 @@
-# Module 13 Mini-Project: Film Tracker
+# Film Tracker
 
-In this Mini-Project, you'll work with a group to complete a film-tracking application that allows you to save films you've already seen or films you want to watch to localStorage.
+## Description
 
-To complete this Mini-Project, you'll need an OMDb API key.
+The Film Tracker is a React-based application that allows users to search for films using the OMDb API and organize them into two lists: "Seen It" and "Watch." The application provides a streamlined way for film enthusiasts to keep track of movies they have watched and those they plan to watch. 
 
-## Instructions
+Users can search for a film title, retrieve detailed information about the film, and add it to either their "Seen It" or "Watch" lists. These lists are stored in `localStorage`, ensuring that the data persists even after refreshing the page. Additionally, users can remove films from either list when they are no longer relevant.
 
-The completed app should meet the following criteria:
+The project is built using TypeScript and React, incorporating TypeScript interfaces to ensure type safety when handling film data from the OMDb API. The application is deployed on Render, making it accessible online. 
 
-* As an avid film buff, I want to be able to search for a film title and get information on that film.
+This project provides hands-on experience in working with APIs, managing state in React, handling localStorage, and deploying applications using Render. 
 
-* As an avid film buff, I want to be able to add films to my "Seen It" and "Watch" lists and have them stored in localStorage.
+## Table of Contents
 
-* As an avid film buff, I want to be able to remove films from my "Seen It" and "Watch" lists when I click the remove button ("x" icon).
+- [Usage](#usage)
+- [Mock-Up](#mock-up)
+- [Instructions](#instructions)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Additional Resources](#additional-resources)
 
-* As an avid film buff, I want to be able to view my deployed site on Render.
+## Usage
+
+To run the application locally, follow these steps:
+
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd film-tracker
+   ```
+
+2. Install dependencies:
+    ```
+   npm install
+   ```
+
+3. Create a .env file in the environment folder based on .env.EXAMPLE and add your OMDb API key:
+    ```
+    VITE_OMDB_API_KEY=your_api_key_here
+    ```
+
+4. Start the development server:
+    ```
+    npm run dev
+    ```
+
+5. Open the application in your browser at http://localhost:5173/.
 
 ## Mock-Up
 
@@ -26,39 +56,62 @@ The following images show the appearance and functionality of the web applicatio
 
 ![The film-tracker "Seen It" list page displays rows of films the user has already seen stored in localStorage, with the option to remove a film from the list.](./images/13-03-film_tracker_seenit.png)
 
-## Getting Started
+## Instructions
 
-You'll primarily be working in the `Develop/src` folder, where you will add to the provided pages and components, and implement a Film interface based on the data returned from OMDb API.
+1. **Search for a Film:** Enter a movie title in the search bar and click the search button.
 
-The OMDb API endpoint has been provided in `api/API.tsx`, but it must be properly imported and implemented.
+2. **View Film Details:** The application will display relevant details about the film, including the title, year, and poster.
 
-You'll also need to provide your OMDb API key in a `.env` file. An example `.env` file is provided, named `.env.EXAMPLE`, in the `environment` folder. You can request an OMDb API key [here](https://www.omdbapi.com/apikey.aspx).
+3. **Add Films to Lists:**
 
-The [React icons](https://www.npmjs.com/package/react-icons) npm package has been included in the `package.json`.
+* Click the "Seen It" button to save a film to your watched list.
 
-Refer to the [Full-Stack Blog on deploying to Render](https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide) and the [Render documentation on setting environment variables](https://docs.render.com/configure-environment-variables).
+* Click the "Watch" button to save a film to your watchlist.
 
-## 📝 Notes
+4. **Manage Lists:**
 
-Refer to the documentation:
+* Navigate to the "Seen It" or "Watch" list pages to view saved movies.
 
-* [The OMDb API](https://www.omdbapi.com/)
+* Click the remove ("x") button to delete a film from either list.
 
-* [React Icons](https://react-icons.github.io/react-icons/)
+5. **Persistent Storage:** Your lists are saved in localStorage, so they will remain even after refreshing the page.
 
-## 💡 Hints
+6. **Deploy on Render:** The application is hosted on Render for easy access online.
 
-* How can the documentation give us an idea of the data we'll get back?
+## Key Features
 
-* How can TypeScript interfaces keep the data being returned from the API organized and less error prone?
+* **Search Functionality:** Retrieve movie details from the OMDb API.
 
-* How can the "Seen It" and "Watch" lists be tracked separately using localStorage?
+* **ocalStorage Integration:** Save and retrieve movies from localStorage.
 
-## 🏆 Bonus
+* **Dynamic Film Lists:** Organize films into "Seen It" and "Watch" lists.
 
-If you've completed this activity, work through the following challenge with your group to further your knowledge:
+* **Easy Removal:** Remove movies from lists with a single click.
 
-* Allow the user to sort the films alphabetically by title in their "Watch" and "Seen It" lists.
+* **Render Deployment:** Access the app online without needing a local setup.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Technology Stack
+
+* **React:** Builds the UI and manages state.
+
+* **TypeScript:** Ensures type safety and better code organization.
+
+* **Vite:** Fast development server and build tool for React projects.
+
+* **OMDb API:** Fetches movie data based on user search queries.
+
+* **React Icons:** Provides icons for UI elements like the remove ("x") button.
+
+* **LocalStorage:** Saves and retrieves user-selected movies persistently.
+
+* **Render:** Hosts and deploys the application online.
+
+## Additional Resources
+
+* Learn more about the [OMDb API](https://www.omdbapi.com/)
+
+* Read the [React Icons documentation](https://react-icons.github.io/react-icons/)
+
+* Guide on [Deploying React Apps on Render](https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide)
+
+* Official [Render documentation on environment variables](https://docs.render.com/configure-environment-variables)
