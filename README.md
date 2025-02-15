@@ -82,7 +82,7 @@ The following images show the appearance and functionality of the web applicatio
 
 * **Search Functionality:** Retrieve movie details from the OMDb API.
 
-* **ocalStorage Integration:** Save and retrieve movies from localStorage.
+* **LocalStorage Integration:** Save and retrieve movies from localStorage.
 
 * **Dynamic Film Lists:** Organize films into "Seen It" and "Watch" lists.
 
